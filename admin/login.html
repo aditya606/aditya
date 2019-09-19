@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: skyblue;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+a.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for a and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  a.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+.bg{
+  background-image: url('images/slider/123.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>
+</head>
+<body class="bg">
+
+
+
+
+<form action="/action_page.php">
+  <h2 style="margin-left: 43%;font-size: 33px"><b>Login</b></h2>
+  <div class="imgcontainer" style="width:30%;height:30%;margin-left: 30%">
+    <img src="profile.png" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container" style="width:30%;height:40%;margin-left: 30%">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" id="admin" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <a href="admin/other-user-profile.html" target="_blank" > <button type="submit">Login</a></button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> <b>Remember me</b>
+      <!-- <br> -->
+      <!-- <a class="" style="margin-right:600px"><a href="#">Forgot Password?</a></a> -->
+      <a href="#" style="margin-left:300px">Forgot password?0</a>
+    </label>
+    
+        
+      
+  </div>
+
+</form>
+
+
+</body>
+
+</html>
